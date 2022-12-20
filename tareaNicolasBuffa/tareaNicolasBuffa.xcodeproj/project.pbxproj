@@ -83,8 +83,6 @@
 		C7BE76542950FDA600A8C9FB = {
 			isa = PBXGroup;
 			children = (
-				C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */,
-				C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */,
 				C7BE765F2950FDA600A8C9FB /* tareaNicolasBuffa */,
 				C7BE76762950FDA700A8C9FB /* tareaNicolasBuffaTests */,
 				C7BE76802950FDA700A8C9FB /* tareaNicolasBuffaUITests */,
@@ -105,6 +103,8 @@
 		C7BE765F2950FDA600A8C9FB /* tareaNicolasBuffa */ = {
 			isa = PBXGroup;
 			children = (
+				C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */,
+				C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */,
 				C7BE76602950FDA600A8C9FB /* AppDelegate.swift */,
 				C7BE76622950FDA600A8C9FB /* SceneDelegate.swift */,
 				C7BE76642950FDA600A8C9FB /* ViewController.swift */,
