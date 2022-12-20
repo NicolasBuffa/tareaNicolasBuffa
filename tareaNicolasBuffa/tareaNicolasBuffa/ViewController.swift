@@ -8,101 +8,50 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet weak var tableView: UITableView!
 
-    /*
-     
-     @IBOutlet weak var nameProduct: UILabel!
-     @IBOutlet weak var discountProduct: UILabel!
-     @IBOutlet weak var priceProduct: UILabel!
-     @IBOutlet weak var oldPriceProduct: UILabel!
-     @IBOutlet weak var propertyColor: UILabel!
-     @IBOutlet weak var colorProduct: UILabel!
-     @IBOutlet weak var propertySize: UILabel!
-     @IBOutlet weak var sizeProduct: UILabel!
-     @IBOutlet weak var message: UILabel!
-     @IBOutlet weak var btnAddCart: UIButton!
-     @IBOutlet weak var imgProduct: UIImageView!
-     
-     
-     */
-    @IBOutlet weak var nameProduct: UILabel!
-    @IBOutlet weak var discountProduct: UILabel!
-    @IBOutlet weak var oldPriceProduct: UILabel!
-    @IBOutlet weak var priceProduct: UILabel!
-    @IBOutlet weak var propertyColor: UILabel!
-    @IBOutlet weak var colorProduct: UILabel!
-    @IBOutlet weak var propertySize: UILabel!
-    @IBOutlet weak var sizeProduct: UILabel!
-    @IBOutlet weak var message: UILabel!
-    
-    @IBOutlet weak var btnAddCart: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        nameProduct.text = "Remera Lisa"
-        nameProduct.font = UIFont.boldSystemFont(ofSize: 15)
-        
-        discountProduct.text = "20%"
-        discountProduct.textColor = .blue
-        discountProduct.font = UIFont.boldSystemFont(ofSize: 14)
-        
-        priceProduct.text = "$45.000"
-        priceProduct.textColor = .darkGray
-        
-        oldPriceProduct.text = "$60.000"
-        oldPriceProduct.textColor = .lightGray
-        oldPriceProduct.font = UIFont.systemFont(ofSize: 16)
-        
-        propertyColor.text = "Color:"
-        propertyColor.font = UIFont.systemFont(ofSize: 15)
-        
-        colorProduct.text = "Diseño 1"
-        colorProduct.font = UIFont.systemFont(ofSize: 15)
-        
-        propertySize.text = "Talle:"
-        propertySize.font = UIFont.systemFont(ofSize: 15)
-        
-        sizeProduct.text = "38.5"
-        sizeProduct.font = UIFont.systemFont(ofSize: 15)
-        
-        message.text = "Últimas unidades"
-        message.font = UIFont.systemFont(ofSize: 14)
-        message.textAlignment = .center;
-        message.backgroundColor = .yellow
-        message.textColor = .orange
-       
-        
-        btnAddCart.backgroundColor = .blue
-        btnAddCart.setTitleColor(.white, for: .normal)
-        btnAddCart.setTitle("Agregar a mi Carrito", for: .normal)
-        
-        btnAddCart.layer.cornerRadius = 18.0
-        
-        
-//        tableView.dataSource = self
-//        tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
-    }
+  var products: [Product] = [Product(), Product()]
 
-
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "MyCustomTableViewCell")
+    tableView.dataSource = self
+  }
 }
-//
-//extension ViewController: UITableViewDataSource{
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as? MyCustomTableViewCell
-//        cell?.discountProduct.text = "20"
-//        cell?.oldPriceProduct.text = "20"
-//        cell?.priceProduct.text = "20"
-//        cell?.nameProduct.text = "20"
-//
-//        cell?.colorProduct.text = "20"
-//        cell?.sizeProduct.text = "20"
-//        return cell!
-//    }
-//
-//
-//}
 
+extension ViewController: UITableViewDataSource{
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return products.count
+  }
+
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomTableViewCell", for: indexPath) as? MyCustomTableViewCell
+
+    let product = products[indexPath.row]
+
+    let customCell = configureCell(cell: cell, withProduct: product)
+
+    return customCell!
+  }
+
+  func configureCell(cell: MyCustomTableViewCell?, withProduct product: Product) -> MyCustomTableViewCell? {
+    cell?.discountProduct.text = product.discountProduct
+    cell?.oldPriceProduct.text = product.oldPriceProduct
+    cell?.priceProduct.text = product.priceProduct
+    cell?.nameProduct.text = product.nameProduct
+
+    cell?.colorProduct.text = product.colorProduct
+    cell?.sizeProduct.text = product.sizeProduct
+
+    return cell
+  }
+}
+
+struct Product {
+  var discountProduct = "20"
+  var oldPriceProduct = "20"
+  var priceProduct = "20"
+  var nameProduct = "20"
+  var colorProduct = "20"
+  var sizeProduct = "20"
+}
