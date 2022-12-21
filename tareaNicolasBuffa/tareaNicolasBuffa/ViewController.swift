@@ -10,12 +10,14 @@ import UIKit
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
 
-  var products: [Product] = [Product(), Product()]
+  var products: [Product] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "MyCustomTableViewCell")
     tableView.dataSource = self
+
+    products = makeProducts()
   }
 }
 
@@ -54,5 +56,33 @@ struct Product {
   var nameProduct = "Remera Lisa"
   var colorProduct = "Diseño 1"
   var sizeProduct = "38.5"
-    
+  var image = ""
 }
+
+extension ViewController {
+  func makeProducts() -> [Product] {
+    let product1 = Product(
+      discountProduct: "20%",
+      oldPriceProduct: "$60.000",
+      priceProduct: "$45.000",
+      nameProduct: "Remera Lisa",
+      colorProduct: "Diseño 1",
+      sizeProduct: "38.5",
+      image: ""
+    )
+
+    let product2 = Product(
+      discountProduct: "30%",
+      oldPriceProduct: "$70.000",
+      priceProduct: "$50.000",
+      nameProduct: "Remera Negra",
+      colorProduct: "Diseño 2",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+
+    return [product1, product2]
+  }
+}
+
+
