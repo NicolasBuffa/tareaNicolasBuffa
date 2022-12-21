@@ -16,6 +16,8 @@
 		C7BE76782950FDA700A8C9FB /* tareaNicolasBuffaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76772950FDA700A8C9FB /* tareaNicolasBuffaTests.swift */; };
 		C7BE76822950FDA700A8C9FB /* tareaNicolasBuffaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76812950FDA700A8C9FB /* tareaNicolasBuffaUITests.swift */; };
 		C7BE76842950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */; };
+		C7BE76922951E83000A8C9FB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */; };
+		C7BE76932951E83000A8C9FB /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C7BE767D2950FDA700A8C9FB /* tareaNicolasBuffaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tareaNicolasBuffaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BE76812950FDA700A8C9FB /* tareaNicolasBuffaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tareaNicolasBuffaUITests.swift; sourceTree = "<group>"; };
 		C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tareaNicolasBuffaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		C7BE765F2950FDA600A8C9FB /* tareaNicolasBuffa */ = {
 			isa = PBXGroup;
 			children = (
+				C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */,
+				C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */,
 				C7BE76602950FDA600A8C9FB /* AppDelegate.swift */,
 				C7BE76622950FDA600A8C9FB /* SceneDelegate.swift */,
 				C7BE76642950FDA600A8C9FB /* ViewController.swift */,
@@ -233,6 +239,7 @@
 			files = (
 				C7BE766D2950FDA700A8C9FB /* LaunchScreen.storyboard in Resources */,
 				C7BE766A2950FDA700A8C9FB /* Assets.xcassets in Resources */,
+				C7BE76932951E83000A8C9FB /* MyCustomTableViewCell.xib in Resources */,
 				C7BE76682950FDA600A8C9FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			files = (
 				C7BE76652950FDA600A8C9FB /* ViewController.swift in Sources */,
 				C7BE76612950FDA600A8C9FB /* AppDelegate.swift in Sources */,
+				C7BE76922951E83000A8C9FB /* MyCustomTableViewCell.swift in Sources */,
 				C7BE76632950FDA600A8C9FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tareaNicolasBuffa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tareaNicolasBuffa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
