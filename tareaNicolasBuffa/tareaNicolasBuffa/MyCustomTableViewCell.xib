@@ -19,8 +19,14 @@
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w9u-9s-BbV" userLabel="Stack View Container">
                         <rect key="frame" x="16" y="16" width="458" height="143"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-O2-0Pi">
-                                <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="68"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-O2-0Pi">
+                                <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="PTx-Bx-gms"/>
+                                    <constraint firstAttribute="height" constant="102" id="b3L-Wg-Gtd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="102" id="sqF-o5-4KY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="tvG-XK-MIg"/>
+                                </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BWO-VT-TAW">
                                 <rect key="frame" x="130.66666666666666" y="0.0" width="327.33333333333337" height="143"/>
@@ -110,19 +116,22 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="btnAddCart" destination="gEq-HS-tTz" id="JEQ-1w-zvF"/>
-                <outlet property="colorProduct" destination="g2h-oR-1IX" id="Ryr-6S-11I"/>
+                <outlet property="btnAddCart" destination="gEq-HS-tTz" id="gkl-Zm-Vi7"/>
+                <outlet property="colorProduct" destination="g2h-oR-1IX" id="xxM-qq-FKm"/>
                 <outlet property="discountProduct" destination="p2o-mK-iEF" id="YkR-5q-l2r"/>
-                <outlet property="imgProduct" destination="nqK-O2-0Pi" id="sob-fZ-PGq"/>
-                <outlet property="message" destination="nOg-1v-WcY" id="BOD-PQ-kWD"/>
-                <outlet property="nameProduct" destination="ZIp-Rh-g7b" id="dp7-gw-d7h"/>
-                <outlet property="oldPriceProduct" destination="6hg-oL-euX" id="iZr-Nc-hBl"/>
+                <outlet property="imgProduct" destination="nqK-O2-0Pi" id="nxw-0f-bsp"/>
+                <outlet property="message" destination="nOg-1v-WcY" id="n8J-3Q-4oX"/>
+                <outlet property="nameProduct" destination="ZIp-Rh-g7b" id="1rW-lB-v2H"/>
+                <outlet property="oldPriceProduct" destination="w0l-8l-GI5" id="iU8-4l-ZT9"/>
                 <outlet property="priceProduct" destination="LQw-oS-no7" id="ug8-ww-R90"/>
-                <outlet property="propertyColor" destination="a4l-JM-X6x" id="G1x-18-bqZ"/>
-                <outlet property="propertySize" destination="w0l-8l-GI5" id="OPz-YC-jvw"/>
-                <outlet property="sizeProduct" destination="gOJ-ly-HqF" id="FpF-hx-FXx"/>
+                <outlet property="propertyColor" destination="6hg-oL-euX" id="Z79-R6-9Gf"/>
+                <outlet property="propertySize" destination="a4l-JM-X6x" id="Jng-Li-hn2"/>
+                <outlet property="sizeProduct" destination="gOJ-ly-HqF" id="uff-v0-MN7"/>
             </connections>
             <point key="canvasLocation" x="189.31297709923663" y="72.887323943661968"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="image1" width="600" height="900"/>
+    </resources>
 </document>

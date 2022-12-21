@@ -48,10 +48,11 @@ extension ViewController: UITableViewDataSource{
 }
 
 struct Product {
-  var discountProduct = "20"
-  var oldPriceProduct = "20"
-  var priceProduct = "20"
-  var nameProduct = "20"
-  var colorProduct = "20"
-  var sizeProduct = "20"
+  var discountProduct = "20%"
+  var oldPriceProduct = "$60.000"
+  var priceProduct = "$45.000"
+  var nameProduct = "Remera Lisa"
+  var colorProduct = "Diseño 1"
+  var sizeProduct = "38.5"
+    
 }
