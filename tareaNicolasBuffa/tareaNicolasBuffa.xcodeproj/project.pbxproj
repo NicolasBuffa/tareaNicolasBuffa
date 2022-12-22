@@ -18,6 +18,7 @@
 		C7BE76842950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */; };
 		C7BE76922951E83000A8C9FB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */; };
 		C7BE76932951E83000A8C9FB /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */; };
+		FB463D1D29549BDA004B7715 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB463D1C29549BDA004B7715 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tareaNicolasBuffaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
+		FB463D1C29549BDA004B7715 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +105,10 @@
 		C7BE765F2950FDA600A8C9FB /* tareaNicolasBuffa */ = {
 			isa = PBXGroup;
 			children = (
-				C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */,
-				C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */,
+				FB463D1829549B0A004B7715 /* ProductDetail */,
+				FB463D1729549AE9004B7715 /* ProductList */,
 				C7BE76602950FDA600A8C9FB /* AppDelegate.swift */,
 				C7BE76622950FDA600A8C9FB /* SceneDelegate.swift */,
-				C7BE76642950FDA600A8C9FB /* ViewController.swift */,
 				C7BE76662950FDA600A8C9FB /* Main.storyboard */,
 				C7BE76692950FDA700A8C9FB /* Assets.xcassets */,
 				C7BE766B2950FDA700A8C9FB /* LaunchScreen.storyboard */,
@@ -131,6 +132,48 @@
 				C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */,
 			);
 			path = tareaNicolasBuffaUITests;
+			sourceTree = "<group>";
+		};
+		FB463D1729549AE9004B7715 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				FB463D1A29549BB4004B7715 /* Domain */,
+				FB463D1929549B60004B7715 /* Views */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		FB463D1829549B0A004B7715 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		FB463D1929549B60004B7715 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7BE76902951E83000A8C9FB /* MyCustomTableViewCell.swift */,
+				C7BE76912951E83000A8C9FB /* MyCustomTableViewCell.xib */,
+				C7BE76642950FDA600A8C9FB /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB463D1A29549BB4004B7715 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FB463D1B29549BCB004B7715 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FB463D1B29549BCB004B7715 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FB463D1C29549BDA004B7715 /* Product.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +310,7 @@
 			files = (
 				C7BE76652950FDA600A8C9FB /* ViewController.swift in Sources */,
 				C7BE76612950FDA600A8C9FB /* AppDelegate.swift in Sources */,
+				FB463D1D29549BDA004B7715 /* Product.swift in Sources */,
 				C7BE76922951E83000A8C9FB /* MyCustomTableViewCell.swift in Sources */,
 				C7BE76632950FDA600A8C9FB /* SceneDelegate.swift in Sources */,
 			);
