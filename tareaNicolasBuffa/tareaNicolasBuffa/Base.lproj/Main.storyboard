@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xdS-88-KrP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w81-v1-yor">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -30,7 +30,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yba-Hp-pFB" secondAttribute="trailing" id="fZE-BM-G3K"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart.fill" catalog="system" id="Q8h-KQ-Llg"/>
                     <navigationItem key="navigationItem" title="Favoritos" id="xp7-7p-QiB"/>
                     <connections>
                         <outlet property="tableView" destination="yba-Hp-pFB" id="KJG-y0-6z7"/>
@@ -38,9 +37,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-909" y="-664"/>
+            <point key="canvasLocation" x="-152" y="-664"/>
         </scene>
-        <!--Carrito-->
+        <!--View Controller-->
         <scene sceneID="clv-ZI-0DK">
             <objects>
                 <viewController id="ySa-qF-TRq" sceneMemberID="viewController">
@@ -50,13 +49,13 @@
                         <viewLayoutGuide key="safeArea" id="e96-Zd-v6x"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Carrito" image="cart.fill" catalog="system" id="Wx1-r4-5V0"/>
+                    <navigationItem key="navigationItem" id="7f5-zE-fMt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvg-DE-0FB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-908" y="766"/>
+            <point key="canvasLocation" x="-216" y="756"/>
         </scene>
-        <!--Inicio-->
+        <!--View Controller-->
         <scene sceneID="ynt-ag-Eoi">
             <objects>
                 <viewController id="JLJ-eX-N7S" sceneMemberID="viewController">
@@ -75,11 +74,11 @@
                         <viewLayoutGuide key="safeArea" id="6O8-OF-P2b"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" image="person.fill" catalog="system" id="nUv-P7-Jod"/>
+                    <navigationItem key="navigationItem" id="Jxh-OS-4kO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZL-Xf-uff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-909.16030534351137" y="7.746478873239437"/>
+            <point key="canvasLocation" x="-182" y="54"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OIM-6M-ZK2">
@@ -93,30 +92,71 @@
                         <color key="tintColor" systemColor="separatorColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="JLJ-eX-N7S" kind="relationship" relationship="viewControllers" id="Ndy-q2-IFm"/>
-                        <segue destination="ySa-qF-TRq" kind="relationship" relationship="viewControllers" id="g69-cQ-m7V"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fGs-ps-KkL"/>
+                        <segue destination="rmn-Pc-Ldf" kind="relationship" relationship="viewControllers" id="cMP-bC-9WG"/>
+                        <segue destination="IS9-ch-2N9" kind="relationship" relationship="viewControllers" id="6hD-ov-b0W"/>
+                        <segue destination="Wja-7G-BXz" kind="relationship" relationship="viewControllers" id="Bz8-2g-JW4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLP-qT-ZaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2198" y="406"/>
+            <point key="canvasLocation" x="-2547" y="63"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="nho-og-wif">
+        <!--Favoritos-->
+        <scene sceneID="PEH-3y-7dU">
             <objects>
-                <navigationController id="xdS-88-KrP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="070-Je-dtr">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmn-Pc-Ldf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart.fill" catalog="system" id="Q8h-KQ-Llg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tQ1-hu-q6T">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="w81-v1-yor" kind="relationship" relationship="rootViewController" id="HtA-H3-jOG"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e9J-MY-Ga1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1tg-EL-iOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm9-ck-4mc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3170" y="406"/>
+            <point key="canvasLocation" x="-909.16030534351137" y="-664.08450704225356"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="QKF-Zs-XLU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IS9-ch-2N9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inicio" image="person.fill" catalog="system" id="nUv-P7-Jod"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TOQ-RX-7Xx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JLJ-eX-N7S" kind="relationship" relationship="rootViewController" id="FTd-Hc-sfL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzA-KA-b0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-908" y="54"/>
+        </scene>
+        <!--Carrito-->
+        <scene sceneID="U01-Ep-OBv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wja-7G-BXz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Carrito" image="cart.fill" catalog="system" id="Wx1-r4-5V0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFL-Bh-tbF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ySa-qF-TRq" kind="relationship" relationship="rootViewController" id="Alj-UR-Qbz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1p-nO-0nL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909" y="756"/>
         </scene>
     </scenes>
     <resources>

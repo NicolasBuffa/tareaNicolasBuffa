@@ -7,15 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
 
-  var products: [Product] = []
+  private var products: [Product] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "Favoritos"
-    tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "MyCustomTableViewCell")
+    tableView.register(
+      UINib(nibName: "MyCustomTableViewCell", bundle: nil),
+      forCellReuseIdentifier: "MyCustomTableViewCell"
+    )
     tableView.dataSource = self
 
     products = makeProducts()
@@ -28,7 +31,10 @@ extension ViewController: UITableViewDataSource{
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomTableViewCell", for: indexPath) as? MyCustomTableViewCell
+    let cell = tableView.dequeueReusableCell(
+      withIdentifier: "MyCustomTableViewCell",
+      for: indexPath
+    ) as? MyCustomTableViewCell
 
     let product = products[indexPath.row]
 
@@ -37,7 +43,7 @@ extension ViewController: UITableViewDataSource{
     return customCell!
   }
 
-  func configureCell(cell: MyCustomTableViewCell?, withProduct product: Product) -> MyCustomTableViewCell? {
+  private func configureCell(cell: MyCustomTableViewCell?, withProduct product: Product) -> MyCustomTableViewCell? {
     cell?.discountProduct.text = product.discountProduct
     cell?.oldPriceProduct.text = product.oldPriceProduct
     cell?.priceProduct.text = product.priceProduct
@@ -50,18 +56,8 @@ extension ViewController: UITableViewDataSource{
   }
 }
 
-struct Product {
-  var discountProduct = "20%"
-  var oldPriceProduct = "$60.000"
-  var priceProduct = "$45.000"
-  var nameProduct = "Remera Lisa"
-  var colorProduct = "Diseño 1"
-  var sizeProduct = "38.5"
-  var image = ""
-}
-
-extension ViewController {
-  func makeProducts() -> [Product] {
+private extension ViewController {
+  private func makeProducts() -> [Product] {
     let product1 = Product(
       discountProduct: "20%",
       oldPriceProduct: "$60.000",
@@ -153,10 +149,7 @@ extension ViewController {
       sizeProduct: "40",
       image: "https://www.paris.cl/asdf"
     )
-    
-    
-    
-    
+
     return [product1, product2,product3, product4, product5,product6,product7,product8,product9,product10]
   }
 }
