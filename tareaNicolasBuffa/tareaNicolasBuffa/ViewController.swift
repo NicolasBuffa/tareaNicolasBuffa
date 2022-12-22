@@ -70,7 +70,6 @@ extension ViewController {
       sizeProduct: "38.5",
       image: ""
     )
-
     let product2 = Product(
       discountProduct: "30%",
       oldPriceProduct: "$70.000",
@@ -80,8 +79,84 @@ extension ViewController {
       sizeProduct: "40",
       image: "https://www.paris.cl/asdf"
     )
-
-    return [product1, product2]
+    let product3 = Product(
+      discountProduct: "30%",
+      oldPriceProduct: "$100.000",
+      priceProduct: "$70.000",
+      nameProduct: "Remera Amarilla",
+      colorProduct: "Diseño 3",
+      sizeProduct: "XXL",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product4 = Product(
+      discountProduct: "30%",
+      oldPriceProduct: "$10.000",
+      priceProduct: "$7.000",
+      nameProduct: "Campera de cuero",
+      colorProduct: "Diseño Unico",
+      sizeProduct: "42",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product5 = Product(
+      discountProduct: "20%",
+      oldPriceProduct: "$50.000",
+      priceProduct: "$40.000",
+      nameProduct: "Pantalon Deporitvo",
+      colorProduct: "Diseño 4",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    
+    let product6 = Product(
+      discountProduct: "10%",
+      oldPriceProduct: "$70.000",
+      priceProduct: "$63.000",
+      nameProduct: "Short Floreado",
+      colorProduct: "Diseño 1",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product7 = Product(
+      discountProduct: "10%",
+      oldPriceProduct: "$50.000",
+      priceProduct: "$45.000",
+      nameProduct: "Camperon Deportivo",
+      colorProduct: "Diseño 1",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product8 = Product(
+      discountProduct: "10%",
+      oldPriceProduct: "$120.000",
+      priceProduct: "$108.000",
+      nameProduct: "Championes Nike",
+      colorProduct: "Diseño 1",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product9 = Product(
+      discountProduct: "50%",
+      oldPriceProduct: "$200.000",
+      priceProduct: "$100.000",
+      nameProduct: "Championes Adidas",
+      colorProduct: "Diseño 1",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    let product10 = Product(
+      discountProduct: "",
+      oldPriceProduct: "",
+      priceProduct: "$140.000",
+      nameProduct: "Championes DC",
+      colorProduct: "Diseño 1",
+      sizeProduct: "40",
+      image: "https://www.paris.cl/asdf"
+    )
+    
+    
+    
+    
+    return [product1, product2,product3, product4, product5,product6,product7,product8,product9,product10]
   }
 }
 
