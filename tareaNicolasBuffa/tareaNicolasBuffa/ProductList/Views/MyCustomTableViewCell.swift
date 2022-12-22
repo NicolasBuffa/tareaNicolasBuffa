@@ -65,6 +65,7 @@ class MyCustomTableViewCell: UITableViewCell {
     propertyColor.text = "Color:"
     propertySize.text = "Talle:"
     message.text = "Últimas unidades"
+    message.isHidden = true
   }
 
   func configButton() {
