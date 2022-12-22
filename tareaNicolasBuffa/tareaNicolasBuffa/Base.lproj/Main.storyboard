@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Favoritos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tareaNicolasBuffa" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,8 +30,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yba-Hp-pFB" secondAttribute="trailing" id="fZE-BM-G3K"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Q8h-KQ-Llg"/>
-                    <navigationItem key="navigationItem" id="xp7-7p-QiB"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart.fill" catalog="system" id="Q8h-KQ-Llg"/>
+                    <navigationItem key="navigationItem" title="Favoritos" id="xp7-7p-QiB"/>
                     <connections>
                         <outlet property="tableView" destination="yba-Hp-pFB" id="KJG-y0-6z7"/>
                     </connections>
@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="-909" y="-664"/>
         </scene>
-        <!--Item 2-->
+        <!--Carrito-->
         <scene sceneID="clv-ZI-0DK">
             <objects>
                 <viewController id="ySa-qF-TRq" sceneMemberID="viewController">
@@ -48,29 +48,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="e96-Zd-v6x"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Wx1-r4-5V0"/>
+                    <tabBarItem key="tabBarItem" title="Carrito" image="cart.fill" catalog="system" id="Wx1-r4-5V0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvg-DE-0FB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-908" y="766"/>
         </scene>
-        <!--Item 1-->
+        <!--Inicio-->
         <scene sceneID="ynt-ag-Eoi">
             <objects>
                 <viewController id="JLJ-eX-N7S" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mDw-jQ-i0m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nicolas Buffa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFB-jF-MFy">
+                                <rect key="frame" x="146" y="157" width="130" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6O8-OF-P2b"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nUv-P7-Jod"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="person.fill" catalog="system" id="nUv-P7-Jod"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZL-Xf-uff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-909" y="8"/>
+            <point key="canvasLocation" x="-909.16030534351137" y="7.746478873239437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OIM-6M-ZK2">
@@ -111,6 +120,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
