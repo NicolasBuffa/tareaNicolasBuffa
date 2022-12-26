@@ -103,6 +103,9 @@
                                         <rect key="frame" x="0.0" y="107.33333333333333" width="267.33333333333331" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Agregar a mi carro"/>
+                                        <connections>
+                                            <action selector="a:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qio-iN-ekR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

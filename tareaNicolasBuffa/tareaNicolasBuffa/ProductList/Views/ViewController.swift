@@ -55,6 +55,13 @@ extension ViewController: UITableViewDataSource{
 
     return cell
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destino = segue.destination as? ViewControllerPDP{
+      destino.products = products
+    }
+    
+  }
 }
 
 private extension ViewController {
@@ -162,6 +169,8 @@ private extension ViewController {
      )
     return [product1, product2,product3, product4, product5,product6,product7,product8,product9,product10]
   }
+ 
+  
 }
 
 

@@ -74,5 +74,8 @@ class MyCustomTableViewCell: UITableViewCell {
     btnAddCart.setTitle("Agregar a mi Carrito", for: .normal)
     btnAddCart.layer.cornerRadius = 18.0
   }
-
+  
+  
+ 
+  
 }
