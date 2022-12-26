@@ -8,6 +8,7 @@
 import UIKit
 
 class MyCustomTableViewCell: UITableViewCell {
+  
   @IBOutlet weak var nameProduct: UILabel!
   @IBOutlet weak var discountProduct: UILabel!
   @IBOutlet weak var priceProduct: UILabel!
@@ -22,6 +23,7 @@ class MyCustomTableViewCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
+    
     configurationLabels()
   }
 
@@ -60,11 +62,11 @@ class MyCustomTableViewCell: UITableViewCell {
     sizeProduct.textColor = UIColor(red: 0.43, green: 0.44, blue: 0.44, alpha: 1.00)
   }
 
-
   func configTextDefault() {
     propertyColor.text = "Color:"
     propertySize.text = "Talle:"
     message.text = "Últimas unidades"
+    message.isHidden = true
   }
 
   func configButton() {
@@ -73,5 +75,4 @@ class MyCustomTableViewCell: UITableViewCell {
     btnAddCart.setTitle("Agregar a mi Carrito", for: .normal)
     btnAddCart.layer.cornerRadius = 18.0
   }
-
 }

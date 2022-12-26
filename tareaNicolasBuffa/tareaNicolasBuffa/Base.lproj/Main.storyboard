@@ -16,13 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yba-Hp-pFB">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yba-Hp-pFB">
+                                <rect key="frame" x="0.0" y="103" width="393" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yba-Hp-pFB" secondAttribute="bottom" id="7j4-cb-HDR"/>
                             <constraint firstItem="yba-Hp-pFB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EbA-n3-ikZ"/>
@@ -30,14 +31,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yba-Hp-pFB" secondAttribute="trailing" id="fZE-BM-G3K"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Favoritos" id="xp7-7p-QiB"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="yba-Hp-pFB" id="KJG-y0-6z7"/>
+                        <segue destination="ATb-5m-pcq" kind="show" identifier="VCpdp" id="fYp-AA-Y8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152" y="-664"/>
+            <point key="canvasLocation" x="-153.43511450381678" y="-664.08450704225356"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="clv-ZI-0DK">
@@ -157,6 +161,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1p-nO-0nL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-909" y="756"/>
+        </scene>
+        <!--View ControllerPDP-->
+        <scene sceneID="IVh-XS-g94">
+            <objects>
+                <viewController id="ATb-5m-pcq" customClass="ViewControllerPDP" customModule="tareaNicolasBuffa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dlu-hV-BKs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhs-7p-ece">
+                                <rect key="frame" x="93" y="271" width="225" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vuE-w5-SGk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pUP-6w-n5v"/>
+                    <connections>
+                        <outlet property="label" destination="vhs-7p-ece" id="r2p-7A-8dS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32e-Da-ap3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="-664"/>
         </scene>
     </scenes>
     <resources>
