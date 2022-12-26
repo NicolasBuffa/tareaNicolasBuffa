@@ -62,7 +62,6 @@ class MyCustomTableViewCell: UITableViewCell {
     sizeProduct.textColor = UIColor(red: 0.43, green: 0.44, blue: 0.44, alpha: 1.00)
   }
 
-
   func configTextDefault() {
     propertyColor.text = "Color:"
     propertySize.text = "Talle:"
@@ -76,8 +75,4 @@ class MyCustomTableViewCell: UITableViewCell {
     btnAddCart.setTitle("Agregar a mi Carrito", for: .normal)
     btnAddCart.layer.cornerRadius = 18.0
   }
-  
-  
- 
-  
 }
