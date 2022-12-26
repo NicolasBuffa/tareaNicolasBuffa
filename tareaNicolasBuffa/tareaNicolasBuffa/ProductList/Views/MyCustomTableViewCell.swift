@@ -8,6 +8,7 @@
 import UIKit
 
 class MyCustomTableViewCell: UITableViewCell {
+  
   @IBOutlet weak var nameProduct: UILabel!
   @IBOutlet weak var discountProduct: UILabel!
   @IBOutlet weak var priceProduct: UILabel!
@@ -22,6 +23,7 @@ class MyCustomTableViewCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
+    
     configurationLabels()
   }
 

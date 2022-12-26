@@ -13,16 +13,19 @@ final class ViewController: UIViewController {
   private var products: [Product] = []
 
   override func viewDidLoad() {
-    super.viewDidLoad()
+    
+   
     title = "Favoritos"
     tableView.register(
       UINib(nibName: "MyCustomTableViewCell", bundle: nil),
       forCellReuseIdentifier: "MyCustomTableViewCell"
     )
     tableView.dataSource = self
+    tableView.delegate = self
 
     products = makeProducts()
   }
+  
 }
 
 extension ViewController: UITableViewDataSource{
@@ -59,10 +62,25 @@ extension ViewController: UITableViewDataSource{
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let destino = segue.destination as? ViewControllerPDP{
       destino.products = products
+     
+      
     }
     
   }
 }
+extension ViewController: UITableViewDelegate{
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print(indexPath.row)
+    performSegue(withIdentifier: "VCpdp", sender: self)
+        
+  }
+  
+  
+  
+ 
+}
+
+
 
 private extension ViewController {
   private func makeProducts() -> [Product] {

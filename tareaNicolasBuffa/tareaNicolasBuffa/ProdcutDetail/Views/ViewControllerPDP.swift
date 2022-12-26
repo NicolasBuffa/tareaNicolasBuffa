@@ -10,13 +10,15 @@ import UIKit
 class ViewControllerPDP: UIViewController {
   
   var products: [Product] = []
+  
 
   @IBOutlet weak var label: UILabel!
   override func viewDidLoad() {
         super.viewDidLoad()
 
       label.text = products[1].nameProduct
-    self.title = products[1].nameProduct
       
     }
+  
+  
 }

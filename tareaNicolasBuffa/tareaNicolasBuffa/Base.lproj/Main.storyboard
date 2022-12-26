@@ -16,13 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yba-Hp-pFB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yba-Hp-pFB">
                                 <rect key="frame" x="0.0" y="103" width="393" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yba-Hp-pFB" secondAttribute="bottom" id="7j4-cb-HDR"/>
                             <constraint firstItem="yba-Hp-pFB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EbA-n3-ikZ"/>
@@ -32,9 +33,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Favoritos" id="xp7-7p-QiB">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="rbv-yp-pz3">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="gOD-hs-noU">
                             <connections>
-                                <segue destination="ATb-5m-pcq" kind="show" identifier="VCpdp" id="rc1-HL-6ao"/>
+                                <segue destination="ATb-5m-pcq" kind="show" identifier="VCpdp" id="iSg-rP-SBJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
