@@ -9,8 +9,8 @@ import UIKit
 
 final class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
-
   private var products: [Product] = []
+  private var selectedIndexPath: IndexPath?
 
   override func viewDidLoad() {
     
@@ -25,10 +25,16 @@ final class ViewController: UIViewController {
 
     products = makeProducts()
   }
-  
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destino = segue.destination as? ViewControllerPDP {
+      guard let selectedIndexPath = selectedIndexPath else { return }
+      destino.product = products[selectedIndexPath.row]
+    }
+  }
 }
 
-extension ViewController: UITableViewDataSource{
+extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return products.count
   }
@@ -58,29 +64,14 @@ extension ViewController: UITableViewDataSource{
 
     return cell
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let destino = segue.destination as? ViewControllerPDP{
-      destino.products = products
-     
-      
-    }
-    
-  }
 }
-extension ViewController: UITableViewDelegate{
+extension ViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print(indexPath.row)
+    selectedIndexPath = indexPath
     performSegue(withIdentifier: "VCpdp", sender: self)
-        
   }
-  
-  
-  
- 
 }
-
-
 
 private extension ViewController {
   private func makeProducts() -> [Product] {
@@ -187,8 +178,4 @@ private extension ViewController {
      )
     return [product1, product2,product3, product4, product5,product6,product7,product8,product9,product10]
   }
- 
-  
 }
-
-
