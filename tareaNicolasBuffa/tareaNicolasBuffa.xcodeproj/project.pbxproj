@@ -84,12 +84,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C761E1C52959E19B00FB5C26 /* ProdcutDetail */ = {
+		C761E1C52959E19B00FB5C26 /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
 				C761E1C62959E1B500FB5C26 /* Views */,
 			);
-			path = ProdcutDetail;
+			path = ProductDetail;
 			sourceTree = "<group>";
 		};
 		C761E1C62959E1B500FB5C26 /* Views */ = {
@@ -123,8 +123,7 @@
 		C7BE765F2950FDA600A8C9FB /* tareaNicolasBuffa */ = {
 			isa = PBXGroup;
 			children = (
-				C761E1C52959E19B00FB5C26 /* ProdcutDetail */,
-				FB463D1729549AE9004B7715 /* ProductList */,
+				FB297A34295A42E900F829D9 /* Modules */,
 				C7BE76602950FDA600A8C9FB /* AppDelegate.swift */,
 				C7BE76622950FDA600A8C9FB /* SceneDelegate.swift */,
 				C7BE76662950FDA600A8C9FB /* Main.storyboard */,
@@ -150,6 +149,15 @@
 				C7BE76832950FDA700A8C9FB /* tareaNicolasBuffaUITestsLaunchTests.swift */,
 			);
 			path = tareaNicolasBuffaUITests;
+			sourceTree = "<group>";
+		};
+		FB297A34295A42E900F829D9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C761E1C52959E19B00FB5C26 /* ProductDetail */,
+				FB463D1729549AE9004B7715 /* ProductList */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		FB463D1729549AE9004B7715 /* ProductList */ = {
