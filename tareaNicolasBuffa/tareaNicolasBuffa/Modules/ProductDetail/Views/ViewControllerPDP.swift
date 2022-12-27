@@ -7,16 +7,29 @@
 
 import UIKit
 
-class ViewControllerPDP: UIViewController {
-  @IBOutlet weak var label: UILabel!
+class ViewControllerPDP: UIViewController{
+
   var product: Product?
 
+  @IBOutlet weak var descritpionProduct: UITextView!
+  @IBOutlet weak var nameProduct: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
+   
     guard let product = product else { return }
+    
 
-    label.text = product.nameProduct
+    title = product.nameProduct
+    
+    descritpionProduct.isEditable = false
+    descritpionProduct.text = product.description
+    
+    nameProduct.text = product.nameProduct
+    
+    
+    
+    
     print(product)
     print(product.nameProduct)
     print(product.sizeProduct)
@@ -25,3 +38,7 @@ class ViewControllerPDP: UIViewController {
 
   }
 }
+
+
+
+
