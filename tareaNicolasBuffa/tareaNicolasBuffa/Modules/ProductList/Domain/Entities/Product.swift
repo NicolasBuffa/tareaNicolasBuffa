@@ -1,10 +1,3 @@
-//
-//  Product.swift
-//  tareaNicolasBuffa
-//
-//  Created by Rodrigo Astorga on 22-12-22.
-//
-
 struct Product {
   var discountProduct = "20%"
   var oldPriceProduct = "$60.000"

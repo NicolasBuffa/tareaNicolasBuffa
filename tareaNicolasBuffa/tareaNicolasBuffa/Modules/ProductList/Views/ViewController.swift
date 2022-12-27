@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  tareaNicolasBuffa
-//
-//  Created by Nicolás Martín Buffa on 19/12/22.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {
@@ -13,8 +6,6 @@ final class ViewController: UIViewController {
   private var selectedIndexPath: IndexPath?
 
   override func viewDidLoad() {
-    
-   
     title = "Favoritos"
     tableView.register(
       UINib(nibName: "MyCustomTableViewCell", bundle: nil),
