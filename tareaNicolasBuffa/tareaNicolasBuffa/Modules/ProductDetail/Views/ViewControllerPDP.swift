@@ -15,27 +15,30 @@ class ViewControllerPDP: UIViewController{
   @IBOutlet weak var nameProduct: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-   
+    descritpionProduct.isEditable = false
+    configView()
+  }
+  
+  func configView(){
+    configColor()
+    configFontSize()
+    configData()
+  }
+  
+  func configColor(){
+    descritpionProduct.textColor = UIColor(red: 0.78, green: 0.77, blue: 0.76, alpha: 1.00)
+    nameProduct.textColor = UIColor(red: 0.24, green: 0.24, blue: 0.24, alpha: 1.00)
+  }
+  func configData(){
     guard let product = product else { return }
-    
-
+    descritpionProduct.text = product.description
+    nameProduct.text = product.nameProduct
     title = product.nameProduct
     
-    descritpionProduct.isEditable = false
-    descritpionProduct.text = product.description
     
-    nameProduct.text = product.nameProduct
+  }
+  func configFontSize (){
     
-    
-    
-    
-    print(product)
-    print(product.nameProduct)
-    print(product.sizeProduct)
-    print(product.image)
-    print(product.colorProduct)
-
   }
 }
 

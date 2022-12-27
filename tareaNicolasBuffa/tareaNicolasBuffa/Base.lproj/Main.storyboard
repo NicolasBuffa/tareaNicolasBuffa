@@ -170,8 +170,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="fHO-Kr-0W4">
+                                <rect key="frame" x="40" y="103" width="313" height="189"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="n09-i2-Hwf">
-                                <rect key="frame" x="0.0" y="302" width="393" height="169.33333333333337"/>
+                                <rect key="frame" x="2" y="302" width="393" height="169.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-u7-xj3">
                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -182,7 +185,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-Ie-vck">
                                         <rect key="frame" x="0.0" y="41.333333333333314" width="393" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -193,9 +196,6 @@
                                     <constraint firstAttribute="trailing" secondItem="lOv-Ie-vck" secondAttribute="trailing" id="UiW-0y-dkK"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="fHO-Kr-0W4">
-                                <rect key="frame" x="40" y="103" width="313" height="189"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ttC-ii-bsq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,11 +203,11 @@
                             <constraint firstItem="fHO-Kr-0W4" firstAttribute="top" secondItem="ttC-ii-bsq" secondAttribute="top" id="4Jg-hQ-K9H"/>
                             <constraint firstItem="fHO-Kr-0W4" firstAttribute="leading" secondItem="ttC-ii-bsq" secondAttribute="leading" constant="40" id="J96-gb-vY7"/>
                             <constraint firstItem="n09-i2-Hwf" firstAttribute="top" secondItem="fHO-Kr-0W4" secondAttribute="bottom" constant="10" id="KZa-eX-zzd"/>
-                            <constraint firstItem="ttC-ii-bsq" firstAttribute="trailing" secondItem="n09-i2-Hwf" secondAttribute="trailing" id="LRd-65-UZH"/>
+                            <constraint firstItem="n09-i2-Hwf" firstAttribute="leading" secondItem="ttC-ii-bsq" secondAttribute="leading" constant="2" id="O9G-CA-7G4"/>
                             <constraint firstItem="n09-i2-Hwf" firstAttribute="top" secondItem="ttC-ii-bsq" secondAttribute="top" constant="199" id="Rbh-FF-IdU"/>
                             <constraint firstItem="ttC-ii-bsq" firstAttribute="trailing" secondItem="fHO-Kr-0W4" secondAttribute="trailing" constant="40" id="Wj9-E8-9KL"/>
-                            <constraint firstItem="n09-i2-Hwf" firstAttribute="leading" secondItem="ttC-ii-bsq" secondAttribute="leading" id="XVQ-zK-apM"/>
                             <constraint firstItem="ttC-ii-bsq" firstAttribute="bottom" secondItem="n09-i2-Hwf" secondAttribute="bottom" constant="248.66666666666663" id="cVg-xH-2Dj"/>
+                            <constraint firstItem="n09-i2-Hwf" firstAttribute="trailing" secondItem="ttC-ii-bsq" secondAttribute="trailing" constant="2" id="qYW-tH-GSp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pUP-6w-n5v"/>
