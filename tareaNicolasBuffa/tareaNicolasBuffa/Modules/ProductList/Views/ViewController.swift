@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  tareaNicolasBuffa
-//
-//  Created by Nicolás Martín Buffa on 19/12/22.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {
@@ -13,8 +6,6 @@ final class ViewController: UIViewController {
   private var selectedIndexPath: IndexPath?
 
   override func viewDidLoad() {
-    
-   
     title = "Favoritos"
     tableView.register(
       UINib(nibName: "MyCustomTableViewCell", bundle: nil),
@@ -83,7 +74,10 @@ private extension ViewController {
        colorProduct: "Diseño 1",
        sizeProduct: "38.5",
        image: "",
-       isLastUnits: true
+       isLastUnits: true,
+       description: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod " +
+       "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation " +
+       "ullamco laboris nisi ut aliquip ex ea commodo consequat."
      )
      let product2 = Product(
        discountProduct: "30%",
@@ -93,7 +87,8 @@ private extension ViewController {
        colorProduct: "Diseño 2",
        sizeProduct: "40",
        image: "https://www.paris.cl/asdf",
-       isLastUnits: false
+       isLastUnits: false,
+       description: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, s"
      )
      let product3 = Product(
        discountProduct: "30%",

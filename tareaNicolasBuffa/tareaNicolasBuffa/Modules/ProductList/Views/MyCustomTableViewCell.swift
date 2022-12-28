@@ -1,10 +1,3 @@
-//
-//  MyCustomTableViewCell.swift
-//  tareaNicolasBuffa
-//
-//  Created by Nicolás Martín Buffa on 20/12/22.
-//
-
 import UIKit
 
 class MyCustomTableViewCell: UITableViewCell {
