@@ -58,7 +58,6 @@ extension ViewController: UITableViewDataSource {
 }
 extension ViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print(indexPath.row)
     selectedIndexPath = indexPath
     performSegue(withIdentifier: "VCpdp", sender: self)
   }

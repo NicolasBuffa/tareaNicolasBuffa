@@ -17,6 +17,12 @@ class ViewControllerPDP: UIViewController{
     descritpionProduct.isEditable = false
     configView()
   }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destino = segue.destination as? ViewControllerMDP {
+      
+      destino.product = product
+    }
+  }
   
   func configView(){
     configColor()
@@ -56,8 +62,9 @@ class ViewControllerPDP: UIViewController{
     priceProduct.font = UIFont.boldSystemFont(ofSize: 20)
     
   }
+  @IBAction func btnClick(_ sender: Any) {
+  
+
+    performSegue(withIdentifier: "VCMoreDetail", sender: self)
+  }
 }
-
-
-
-

@@ -177,41 +177,41 @@
                                 <rect key="frame" x="16" y="302" width="361" height="418"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-u7-xj3">
-                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="755" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-Ie-vck">
-                                        <rect key="frame" x="0.0" y="21" width="361" height="256.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="41.333333333333314" width="361" height="158"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbO-Dm-ARP">
-                                        <rect key="frame" x="0.0" y="298.66666666666663" width="119.33333333333333" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrR-Vo-O4w">
+                                        <rect key="frame" x="0.0" y="220.33333333333334" width="119.66666666666667" height="77.666666666666657"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Mostrar más"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mostrar Mas"/>
                                         <connections>
-                                            <segue destination="hJh-a2-BC9" kind="show" id="gXs-TH-5p3"/>
+                                            <action selector="btnClick:" destination="ATb-5m-pcq" eventType="touchUpInside" id="gYz-OS-E7Z"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="VKF-2W-L7a">
-                                        <rect key="frame" x="0.0" y="319.66666666666663" width="361" height="98.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="319" width="361" height="99"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="278" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-rW-Veo">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="19.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yo-Bq-eoE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="19.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Blanca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I2-2d-Osg">
-                                                        <rect key="frame" x="322" y="0.0" width="39" height="19.666666666666668"/>
+                                                        <rect key="frame" x="322" y="0.0" width="39" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -219,7 +219,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="296" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-MK-Deh">
-                                                <rect key="frame" x="0.0" y="38.666666666666742" width="361" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="39.333333333333371" width="361" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhK-ih-vxl">
                                                         <rect key="frame" x="0.0" y="0.0" width="13.666666666666666" height="20.333333333333332"/>
@@ -236,7 +236,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="57C-gq-KHy">
-                                                <rect key="frame" x="0.0" y="78" width="217.33333333333334" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="78.666666666666629" width="217.33333333333334" height="20.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Precio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Km-vc-6yn">
                                                         <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="20.333333333333332"/>
@@ -284,6 +284,7 @@
                         <outlet property="propertySize" destination="OhK-ih-vxl" id="OJ2-s6-Pep"/>
                         <outlet property="sizeProduct" destination="ZGl-54-0Ng" id="191-us-6pS"/>
                         <outlet property="stackViewPrice" destination="57C-gq-KHy" id="064-ub-Ggm"/>
+                        <segue destination="hJh-a2-BC9" kind="show" identifier="VCMoreDetail" id="9mG-t4-4rD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32e-Da-ap3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,16 +294,19 @@
         <!--Modal-->
         <scene sceneID="xEs-mO-LuH">
             <objects>
-                <viewController title="Modal" id="hJh-a2-BC9" sceneMemberID="viewController">
+                <viewController title="Modal" id="hJh-a2-BC9" customClass="ViewControllerMDP" customModule="tareaNicolasBuffa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VpZ-JX-TUz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-jY-iKe">
-                                <rect key="frame" x="119" y="541" width="155" height="35"/>
+                                <rect key="frame" x="119" y="541" width="155" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Volver a favoritos"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="hJh-a2-BC9" eventType="touchUpInside" id="qm1-6d-lra"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EtQ-Ma-NaT"/>
@@ -312,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRp-kz-DzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1615" y="-664"/>
+            <point key="canvasLocation" x="1614.5038167938931" y="-664.08450704225356"/>
         </scene>
     </scenes>
     <resources>
