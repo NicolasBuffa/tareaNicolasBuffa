@@ -16,6 +16,10 @@ final class ViewController: UIViewController {
 
     products = makeProducts()
   }
+  
+  @IBAction func fromBackPage (segue: UIStoryboardSegue!){
+    
+  }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let destino = segue.destination as? ViewControllerPDP {
